@@ -97,3 +97,72 @@ h5{
     color: #1b1a1a;
     font-family: 'Poppins', sans-serif;
 }
+
+
+.sponsor{
+    margin-top: 100px;
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container-sponsor{
+    height: 50px;
+    width: 170px;
+    background-color: aqua;
+    margin-left: 10px;
+    background-image: url(index_12.jpg);
+     background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer-container{
+width: 100%;
+height: auto;
+margin-top: 80px;
+}
+
+.left-footer-container{
+padding: 40px;
+width: 50%;
+height: auto;
+/* background-color: blue; */
+}
+
+.footer-title{
+    width: 100%;
+    padding-left: 75px;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.Adress{
+    margin: 16px;
+    display: flex;
+}
+
+.column{
+    padding: 10px;
+}
+
+.adress-icon{
+   padding: 10px;
+    text-align:center;
+    align-items: center;
+    
+width: 50px;
+height: 50px;
+}
+
+.fa-solid{
+    position: relative;
+    top: 10px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid red;
+}
