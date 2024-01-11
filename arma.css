@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,23 +7,80 @@
     box-sizing: border-box;
 }
 
-/* .nav-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+  }
 
-} */
+p{
+    font-family: 'Helvetica', sans-serif;
+}
 
-/* .nav{
-    display: flex;
-    justify-content: space-between; 
-} */
+body {
+    background: linear-gradient(90deg, #000010 0%, #010146 100%);
+    color: #ffffff;
+      
+  }
 
-/* .navbar-expand-lg .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    padding-left: 50px;
-} */
+/* Nawigacja */
+.navbar{
+    padding: 0;
+    background: linear-gradient(90deg, #000010 0%, #010146 100%);
+} 
+
+.container-fluid{
+    color: #ffffff;
+}
+
+.navbar .container-fluid .navbar-brand{
+height: 150px;
+}
+
+.navbar-brand{
+    padding: 20px;
+}
+
+.dropdown-item{
+    font-size: 14px;
+    line-height: 16px;
+    color: #000003;
+    font-weight: 500;
+}
+
+.nav-item::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.nav-item:hover::after{
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-item{
+    margin-left: 100px;
+    font-size: 20px;
+    line-height: 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.logo-img{
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+}
 
 .navbar-toggler{
     margin-right: 15px;
@@ -29,41 +88,61 @@
 
 .navbar-collapse{
 padding-left: 15px;
+transition: .3s ease-in-out;
 padding-right: 15px;
 }
 
-.dropdown-menu{
-    padding: 15px;
+
+
+.dropdown-menu[data-bs-popper]{
+left: -120px;
+
 }
+
+
+.navbar>.container-fluid{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (min-width:597px){
+    .navbar>.container-fluid{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    }
+}
+
+/* środkowa sekcja */
 
 .mid-section{
 width: 100%;
 height: 80vh;
-
+background: linear-gradient(90deg, #000010 0%, #010146 100%);
 }
 
 .bridge-img{
     height: 100%;
     width: 100%;
     padding: 20px;
-
 }
 
+/* nasza misja */
+
 .nasza-misja{
+    background: linear-gradient(90deg, #000010 0%, #010146 100%);
     flex-direction: column;
-     flex-wrap: wrap;
-    
+    flex-wrap: wrap;
     height: auto;
     width: 100%;
     margin: 40px 0 40px 0;
     display: flex;
-    /* padding-left: 100px;
-    padding-right: 100px; */
-
 }
 
 .description{
-
     height: auto;
     width: 100%;
     padding-left: 50px;
@@ -83,8 +162,6 @@ height: 80vh;
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: .3px;
-    color: #1b1a1a;
-    font-family: 'Poppins', sans-serif;
 }
 
 .about-me{
@@ -92,11 +169,68 @@ height: 80vh;
     border-radius: 40px;
     border-color: red;
     border-style: solid;
-    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: #686868;
 }
+
+
+/* modal do oferty */
+
+.modal{
+    --bs-modal-width: 1000px;
+}
+.modal-dialog{
+    /* width: 900px; */
+    top:100px;
+    color:black;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+.modal-content{ 
+    height: 500px;
+}
+
+.ul-modal{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+}
+
+.li-modal{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+.content-adds{
+    color: #ed004c;
+    height: 200px;
+    background-color: #010146;
+}
+
+#opis-content{
+    max-height: 250px;
+    overflow: auto;
+}
+
+.pobranie-content{
+    overflow: auto;
+    max-height: 100px;
+}
+
+/* oferta */
 
 .portfolio{
     margin-top: 120px;
@@ -105,82 +239,55 @@ height: 80vh;
 }
 
 
-h5{
+.offert-title{
     font-size: 44px;
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: .3px;
-    color: #1b1a1a;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: .5s ease all;
+}
 
+/* .h-100{
+    min-height: 350px;
+    max-height: 350px;
+} */
 
+/* footer */
+
+.about-footer li {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tel{
+    display: flex;
+   
+   
+    text-wrap: nowrap;
+}
 
 .footer-container{
- background-color: #272727;
+  
 width: 100%;
 height: auto;
 margin-top: 80px;
 }
 
-.left-footer-container{
-    /* white-space: pre; */
-    white-space: nowrap;
-    color: white;
-padding: 20px;
-width: 50%;
-height: 100%;
-/* background-color: blue; */
-}
 
-.footer-title{
-    width: 100%;
-    margin-left: 75px;
-    font-weight: 500;
-    font-size: larger;
-   
-}
-
-/* .Adress{
-    margin: 16px;
-    display: flex;
-} */
-
-.column{
-    width: 100%;
-    padding: 10px;
-}
-
-.adress-icon{
-   padding: 10px;
-    text-align:center;
-    align-items: center;
-    
-width: 50px;
-height: 50px;
-}
-
-.fa-solid{
-    position: relative;
-    top: 10px;
-}
-
-
-
-.Adress-title{
+span{
 width: 100%;
 }
 
-.Adres-content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-span{
-    width: 100%;
-}
+/* hr */
 
 #hr-section{
     margin-top: 80px;
@@ -190,31 +297,7 @@ span{
     opacity: 1;
 }
 
-.right-footer-container{
-
-}
-
-/* .navbar-toggler {
-    position: relative;
-    left: 280px;
-     margin-right: 49px;
-}  */
-
-.navbar>.container-fluid{
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: flex-end;
-}
 
 
 
-@media (min-width:597px){
 
-    .navbar>.container-fluid{
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-    }
-}
