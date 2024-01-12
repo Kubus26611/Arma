@@ -122,7 +122,7 @@ padding-right: 4px !important;
 padding-right: 0px !important;
 }
 footer hr {
-border-color: #9294a0;
+    border: 1px solid red;
 }
 
 .footer-bottom p {
