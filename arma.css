@@ -22,7 +22,7 @@ span{
 }
 
 body {
-    background-color: lightgray;
+    background: lightgray;
     
     color: #ffffff;
       z-index: -2;
@@ -31,7 +31,7 @@ body {
 /* Nawigacja */
 .navbar{
     padding: 0;
-    background-color: lightgray;
+    background: lightgray;
 } 
 
 .container-fluid{
@@ -127,7 +127,7 @@ left: -120px;
     display: flex;
 width: 100%;
 height: auto;
-background-color: lightgray;
+background: lightgray;
 }
 
 .bridge-img{
@@ -141,7 +141,7 @@ background-color: lightgray;
 /* nasza misja */
 
 .nasza-misja{
-    background-color: lightgray;
+    background: lightgray;
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
