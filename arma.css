@@ -22,7 +22,8 @@ span{
 }
 
 body {
-    background: linear-gradient(90deg, #000010 0%, #010146 100%);
+    background-color: lightgray;
+    
     color: #ffffff;
       z-index: -2;
   }
@@ -30,7 +31,7 @@ body {
 /* Nawigacja */
 .navbar{
     padding: 0;
-    background: linear-gradient(90deg, #000010 0%, #010146 100%);
+    background-color: lightgray;
 } 
 
 .container-fluid{
@@ -58,7 +59,7 @@ height: 150px;
     bottom: 0;
     left: 0;
     width: 0%;
-    background-image: linear-gradient(305deg, #f16532 0, #f25935 16.67%, #f34c38 33.33%, #f23c3c 50%, #f12840 66.67%, #ef0146 83.33%, #ed004c 100%);;
+    background-image: linear-gradient;
     height: .15em;
     border-radius: 10px;
     transition: .3s ease-in-out;
@@ -126,7 +127,7 @@ left: -120px;
     display: flex;
 width: 100%;
 height: auto;
-background: linear-gradient(90deg, #000010 0%, #010146 100%);
+background-color: lightgray;
 }
 
 .bridge-img{
@@ -140,7 +141,7 @@ background: linear-gradient(90deg, #000010 0%, #010146 100%);
 /* nasza misja */
 
 .nasza-misja{
-    background: linear-gradient(90deg, #000010 0%, #010146 100%);
+    background-color: lightgray;
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
